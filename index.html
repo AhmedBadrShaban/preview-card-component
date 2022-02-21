@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+  <style>
+    * {
+      font-family: "Outfit", sans-serif;
+      box-sizing: content-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 20%;
+      display: block;
+      margin: 0 auto 0 auto;
+      height: fit-content;
+      border-radius: 8px;
+      background-color: hsl(216, 50%, 16%);
+
+    }
+
+    .image-card {
+      background-color: red;
+      width: 85.5%;
+      display: block;
+      margin: 13.459px auto 13.459px auto;
+      border-radius: 8px;
+
+    }
+
+    .text-container {
+      width: 90%;
+      padding-left: 5px;
+
+      margin: 5px auto 10px auto;
+    }
+
+    .fotter {
+      width: 90%;
+      padding-left: 5px;
+
+      margin: 5px auto 30px auto;
+
+    }
+
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      color: hsl(178, 100%, 50%);
+      font-weight: 400;
+    }
+
+    p {
+      color: hsl(215, 51%, 70%);
+    }
+
+    hr {
+      font-weight: 300;
+      border-style: none;
+      border-top-style: solid;
+      border-color: gray;
+      border-width: 10px;
+      padding-left: 5px;
+      width: 90%;
+      margin: 5px auto 10px auto;
+      border-top-width: 1px;
+    }
+
+    .fotter-icon {
+      float: left;
+      border-width: 5px;
+      width: 20px;
+      border-color: White;
+      margin-bottom: 20px;
+      margin-right: 10px;
+
+    }
+
+    .creation {
+      font-size: 1rem;
+      color: hsl(178, 100%, 50%);
+      font-weight: 400;
+    }
+
+    span {
+      color: hsl(215, 51%, 70%);
+    }
+
+    .card-info {
+      padding-left: 5px;
+      margin: 5px auto 10px auto;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 5px auto 10px auto;
+    }
+
+    .card__price {
+      width: 60%;
+      margin-left: 15px;
+      font-size: 0.7rem;
+    }
+    .card-clock {
+      font-size: 0.7rem;
+      width: 40%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-photo">
+      <img class="image-card" src="images\image-equilibrium.jpg" alt="image-card">
+    </div>
+    <div class="text-container">
+      <h3> Equilibrium #3429</h3>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+    <div class="card-info">
+      <div class="card__price">
+        <img src="images/icon-ethereum.svg" alt="" class="card__icon">
+        <span>0.041 ETH</span>
+      </div>
+      <div class="card-clock">
+        <img src="images/icon-clock.svg"" alt="" class=" card__icon">
+        <span>3 days left</span>
+      </div>
+    </div>
+    <hr>
+    <div class="fotter">
+      <img class="fotter-icon" src="images/image-avatar.png" alt="fotter-icon">
+      <p class="creation"><span>Creation of</span> Jules Wyvern</p>
+    </div>
+
+  </div>
+</body>
+
+</html>
